@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <h1>Simple template</h1>
+
+  <template id="my-paragraph">
+    <style>
+      p {
+        color: gray
+      }
+    </style>
+    <p>
+      <slot name="my-text"></slot>
+    </p>
+  </template>
+
+  <my-paragraph>
+    <div slot="my-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+  </my-paragraph>
+
+</body>
+
+</html>
